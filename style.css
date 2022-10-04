@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 1rem;
+    background-color: rgb(153, 61, 239);
+}
+
+
+/* ---- utility classes ---- */
+.flex{
+    display: flex;
+    align-items: center;
+}
+.center{
+    justify-content: center;
+}
+
+.btn{
+    width: 100%;
+    padding: 14px 10px;
+    border: none;
+    background: #9a5cd5;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.btn:active{
+    transform: scale(0.9);
+}
+
+/* ------- container ---- */
+.container{
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+}
+.container-header{
+    color: #262626;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1px;
+
+}
+
+.container input{
+    width: 100%;
+    padding: 14px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 17px;
+    margin-bottom: 11px;
+    outline: none;
+}
+
+.container input:focus{
+    border: 2px solid rgb(153, 61, 239);
+    box-shadow: 0px 0px 5px;
+}
+
+
+
+.container .msg{
+    text-align: center;
+    padding: 12px;
+}
+.msg span{
+    color: #9a5cd5;
+    font-size: 17px
+}
+
+
+@media screen  and (max-width:400px) {
+    .msg span{
+        font-size: 15px;
+    }
+    .container-header{
+        text-align: center;
+    }
+}
